@@ -281,7 +281,7 @@ class PiService(Service):
 pi_service = PiService()
 advert = None
 
-def on_button_pressed():
+def on_button_Double_clicked():
     global last_press_time, mac_address
     current_time = time.time()
     
@@ -348,7 +348,7 @@ async def main():
 
 
     button = Button(17)
-    button.when_pressed = on_button_pressed
+    button.when_pressed = on_button_Double_clicked
     print("Button listener active on GPIO 17.")
 
 
